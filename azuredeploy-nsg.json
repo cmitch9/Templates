@@ -4,7 +4,7 @@
   "parameters": {
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "McKessonVNET",
+      "defaultValue": "VNET-NDC-Dev",
       "metadata": {
         "description": "This is your Virtual Network"
       }
