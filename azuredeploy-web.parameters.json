@@ -6,10 +6,10 @@
         "value": 2
         },
         "storageAccountName": {
-        "value": "mckessontest"
+        "value": "stgndcdevtest"
         },
         "virtualNetworkName": {
-        "value": "McKessonVNET"
+        "value": "VNET-NDC-Dev"
         },
         "subnetName": {
         "value": "APP-Subnet"
