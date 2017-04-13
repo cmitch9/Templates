@@ -19,7 +19,7 @@
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
     "subnet2Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet2Name'))]",
     "apiVersion": "2015-06-15",
-    "sharedBaseUrl" : "https://raw.githubusercontent.com/NimboCloud/ARM-Templates/master/templates/",
+    "sharedBaseUrl" : "https://raw.githubusercontent.com/cmitch9/master/templates/",
     "secondTemplate" : {
       "templateUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.json')]",
       "paramUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.parameters.json')]"
