@@ -9,10 +9,10 @@
      "value": "ChangeMe7823462B!"
    },
    "storageAccountName": {
-     "value": "mckessontest"
+     "value": "stgndcdevtest"
    },
    "virtualNetworkName": {
-     "value": "McKessonVNET"
+     "value": "VNET-NDC-Dev"
    },
    "subnetName": {
      "value": "DB-Subnet"
