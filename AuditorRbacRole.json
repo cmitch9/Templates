@@ -1,0 +1,23 @@
+{
+  "Name": "Azure Auditor",
+  "Id": "cadb4a5a-4e7a-47be-84db-05cad13b6769",
+  "IsCustom": true,
+  "Description": "Can view everything in a subscription.",
+  "Actions": [
+    "Microsoft.Storage/*/read",
+    "Microsoft.Network/*/read",
+    "Microsoft.Compute/*/read",
+    "Microsoft.Authorization/*/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Insights/alertRules/read",
+    "Microsoft.Insights/diagnosticSettings/read",
+    "Microsoft.Support/read"
+  ],
+  "NotActions": [
+
+  ],
+  "AssignableScopes": [
+    "/subscriptions/EnterSubscriptions",
+  ]
+}
+
