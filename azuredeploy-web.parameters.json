@@ -5,12 +5,12 @@
         "numOfInstances": {
         "value": 2
         },
-        "storageAccountName": {
+      "storageAccountName": {
         "value": "stgndcdevtest"
-        },
-        "virtualNetworkName": {
+      },
+      "virtualNetworkName": {
         "value": "VNET-NDC-Dev"
-        },
+      },
         "subnetName": {
         "value": "APP-Subnet"
         },

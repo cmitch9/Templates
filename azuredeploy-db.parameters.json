@@ -8,12 +8,12 @@
    "adminPassword": {
      "value": "ChangeMe7823462B!"
    },
-   "storageAccountName": {
-     "value": "stgndcdevtest"
-   },
-   "virtualNetworkName": {
-     "value": "VNET-NDC-Dev"
-   },
+  "storageAccountName": {
+    "value": "stgndcdevtest"
+  },
+  "virtualNetworkName": {
+    "value": "VNET-NDC-Dev"
+  },
    "subnetName": {
      "value": "DB-Subnet"
    },
