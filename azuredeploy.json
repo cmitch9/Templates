@@ -38,6 +38,10 @@
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storageAccountName')]",
       "apiVersion": "2016-01-01",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "Storage",
       "location": "[variables('location')]",
       "properties": {
         "accountType": "[variables('storageAccountType')]"
