@@ -4,7 +4,7 @@
   "parameters": {
   },
   "variables": {
-    "storageAccountName": "ndccyriltest",
+    "storageAccountName": "stgndcdevtest",
     "location": "[resourceGroup().location]",
     "addressPrefix": "10.0.0.0/16",
     "subnet1Name": "DMZ-Subnet",
@@ -14,7 +14,7 @@
     "subnet2Prefix": "10.0.1.0/24",
     "subnet3Prefix": "10.0.2.0/24",
     "storageAccountType": "Standard_LRS",
-    "virtualNetworkName": "ndcVNET",
+    "virtualNetworkName": "VNET-NDC-Dev",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
     "subnet2Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet2Name'))]",
