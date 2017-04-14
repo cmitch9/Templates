@@ -4,7 +4,7 @@
   "parameters": {
   },
   "variables": {
-    "storageAccountName": "stgndcdevtest",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'standardsa')]",
     "location": "[resourceGroup().location]",
     "addressPrefix": "172.16.0.0/16",
     "subnet1Name": "DMZ-Subnet",

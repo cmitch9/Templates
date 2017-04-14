@@ -5,12 +5,12 @@
         "numOfInstances": {
         "value": 2
         },
-      "storageAccountName": {
-        "value": "stgndcdevtest"
-      },
-      "virtualNetworkName": {
-        "value": "VNET-NDC-Dev"
-      },
+        "storageAccountName": {
+        "value": "mckessontest"
+        },
+        "virtualNetworkName": {
+        "value": "McKessonVNET"
+        },
         "subnetName": {
         "value": "APP-Subnet"
         },
