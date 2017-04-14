@@ -9,28 +9,28 @@
     "addressPrefix": "10.0.0.0/16",
     "subnet1Name": "DMZ-Subnet",
     "subnet2Name": "APP-Subnet",
-	  "subnet3Name": "DB-Subnet",
+    "subnet3Name": "DB-Subnet",
     "subnet1Prefix": "10.0.0.0/24",
     "subnet2Prefix": "10.0.1.0/24",
-	  "subnet3Prefix": "10.0.2.0/24",
+    "subnet3Prefix": "10.0.2.0/24",
     "storageAccountType": "Standard_LRS",
     "virtualNetworkName": "ndcVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
     "subnet2Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet2Name'))]",
     "apiVersion": "2015-06-15",
-    "sharedBaseUrl" : "https://raw.githubusercontent.com/cmitch9/Templates/master/",
-    "secondTemplate" : {
-      "templateUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.json')]",
-      "paramUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.parameters.json')]"
+    "sharedBaseUrl": "https://raw.githubusercontent.com/cmitch9/Templates/master/",
+    "secondTemplate": {
+      "templateUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-web.json')]",
+      "paramUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-web.parameters.json')]"
     },
-    "thirdTemplate" : {
-      "templateUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-db.json')]",
-      "paramUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-db.parameters.json')]"
+    "thirdTemplate": {
+      "templateUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-db.json')]",
+      "paramUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-db.parameters.json')]"
     },
-	  "fourthTemplate" : {
-      "templateUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-nsg.json')]",
-      "paramUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-nsg.parameters.json')]"
+    "fourthTemplate": {
+      "templateUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-nsg.json')]",
+      "paramUrl": "[concat(variables('sharedBaseUrl'),'azuredeploy-nsg.parameters.json')]"
     }
   },
   "resources": [
