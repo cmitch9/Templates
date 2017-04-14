@@ -4,7 +4,7 @@
   "parameters": {
   },
   "variables": {
-    "storageAccountName": "stgndcdevtest",
+    "storageAccountName": "ndccyriltest",
     "location": "[resourceGroup().location]",
     "addressPrefix": "10.0.0.0/16",
     "subnet1Name": "DMZ-Subnet",
@@ -14,12 +14,12 @@
     "subnet2Prefix": "10.0.1.0/24",
 	  "subnet3Prefix": "10.0.2.0/24",
     "storageAccountType": "Standard_LRS",
-    "virtualNetworkName": "VNET-NDC-Dev",
+    "virtualNetworkName": "ndcVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
     "subnet2Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet2Name'))]",
     "apiVersion": "2015-06-15",
-    "sharedBaseUrl" : "https://raw.githubusercontent.com/cmitch9/master/templates/",
+    "sharedBaseUrl" : "https://raw.githubusercontent.com/cmitch9/Templates/master/azuredeploy.json",
     "secondTemplate" : {
       "templateUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.json')]",
       "paramUrl" : "[concat(variables('sharedBaseUrl'),'azuredeploy-web.parameters.json')]"
@@ -37,14 +37,14 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storageAccountName')]",
-      "apiVersion": "[variables('apiVersion')]",
+      "apiVersion": "2016-01-01",
       "location": "[variables('location')]",
       "properties": {
         "accountType": "[variables('storageAccountType')]"
       }
     },
     {
-      "apiVersion": "[variables('apiVersion')]",
+      "apiVersion": "2016-03-30",
       "type": "Microsoft.Network/virtualNetworks",
       "name": "[variables('virtualNetworkName')]",
       "location": "[variables('location')]",
@@ -67,7 +67,7 @@
               "addressPrefix": "[variables('subnet2Prefix')]"
             }
           },
-		  {
+          {
             "name": "[variables('subnet3Name')]",
             "properties": {
               "addressPrefix": "[variables('subnet3Prefix')]"
@@ -77,7 +77,7 @@
       }
     },
     {
-      "apiVersion": "2015-01-01",
+      "apiVersion": "2016-02-01",
       "name": "APPserversLinked",
       "type": "Microsoft.Resources/deployments",
       "dependsOn": [
